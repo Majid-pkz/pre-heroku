@@ -1,3 +1,5 @@
+
+
 const profileFormHandler = async (event) => {
   event.preventDefault();
 
@@ -29,13 +31,18 @@ const searchEl = document.querySelector('#search-btn')
   fetch('api/jobs')
   // {headers: { 'Content-Type': 'application/json' }})
   .then(resp => resp.json()).then(data =>{
-    console.log(data)
-    document.location.replace('/jobs');
+    console.log(data)     
+   
+
+     document.location.replace('/jobs');
   })
+
+  
 
  }
 
 
+ 
 // adsHandler();
 
 

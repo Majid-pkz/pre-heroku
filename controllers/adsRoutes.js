@@ -16,8 +16,8 @@ router.get('/jobs',  withAuth, async (req, res) => {
 
      );
      const jobAds = jobData.map((job) => job.get({ plain: true }));
-    //  console.log("----------------------------------------------------------------")
-    //  console.log(jobAds)
+      console.log("----------------------------------------------------------------")
+      console.log(jobAds)
      res.render('ads',{jobAds, logged_in: req.session.logged_in });
      // res.status(200).json(jobData);
  } 
